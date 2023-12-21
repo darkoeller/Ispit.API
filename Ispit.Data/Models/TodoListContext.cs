@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Ispit.Data.Models;
+﻿namespace Ispit.Data.Models;
 
 public class TodoListContext : DbContext
 {
@@ -12,7 +10,7 @@ public class TodoListContext : DbContext
    {
    }
 
-   public DbSet<TodoList> TodoLists { get; set; }
+   public DbSet<TodoList> TodoLists { get; set; } = null!;
 
    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
    {

@@ -10,12 +10,12 @@ namespace Ispit.Api.Controllers
    [ApiController]
    public class TodoListsController : ControllerBase
    {
-      private readonly TodoListContext _context;
+
       private readonly ITodoListRepository _repository;
-      public TodoListsController(ITodoListRepository repository, TodoListContext context)
+      public TodoListsController(ITodoListRepository repository)
       {
          _repository = repository;
-         _context = context;
+
       }
       // GET: api/TodoLists
       [HttpGet]

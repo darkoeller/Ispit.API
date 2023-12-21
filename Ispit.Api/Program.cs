@@ -1,3 +1,8 @@
+using Ispit.Data.Interfaces;
+using Ispit.Data.Models;
+using Ispit.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 namespace Ispit.Api
 {
    public class Program
@@ -12,7 +17,9 @@ namespace Ispit.Api
          // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
          builder.Services.AddEndpointsApiExplorer();
          builder.Services.AddSwaggerGen();
-
+         builder.Services.AddDbContext<TodoListContext>(option =>
+            option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+         builder.Services.AddScoped<ITodoListRepository, TodoListRepository>();
          var app = builder.Build();
 
          // Configure the HTTP request pipeline.

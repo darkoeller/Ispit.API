@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ispit.Data", "Ispit.Data\Ispit.Data.csproj", "{1F209283-0DCF-42BC-BFFB-2C50EAA3809F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ispit.Api", "Ispit.Api\Ispit.Api.csproj", "{81BC3170-6853-4245-9394-CBA0D4BCED00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F209283-0DCF-42BC-BFFB-2C50EAA3809F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F209283-0DCF-42BC-BFFB-2C50EAA3809F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F209283-0DCF-42BC-BFFB-2C50EAA3809F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BC3170-6853-4245-9394-CBA0D4BCED00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BC3170-6853-4245-9394-CBA0D4BCED00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BC3170-6853-4245-9394-CBA0D4BCED00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BC3170-6853-4245-9394-CBA0D4BCED00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
